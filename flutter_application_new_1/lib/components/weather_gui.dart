@@ -9,12 +9,23 @@ class WeatherApp extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-          const Card(child: Text('Ayo wuz gud')),
-          const Card(child: Text('Ayo wuz gud2')),
+          const Card(
+              child: Padding(
+            padding: const EdgeInsets.all(10.0),
+            //child: Text('Weather Icon'),
+            child: Icon(
+              Icons.sunny_snowing,
+              //padding: const EdgeInsets.all(10.0),
+              color: Colors.pink,
+              size: 95.0,
+              semanticLabel: 'Text to announce in accessibility modes',
+            ),
+          )),
+          const Card(child: Text('Current Weather: Sunny and snowing')),
         ]),
         Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-          const Card(child: const Text('Ayo wuz gud3')),
-          const Card(child: const Text('Ayo wuz gud4')),
+          const Card(child: const Text('Temperature: 99C')),
+          const Card(child: const Text('Wind speed: 100mph')),
         ]),
       ],
     );
