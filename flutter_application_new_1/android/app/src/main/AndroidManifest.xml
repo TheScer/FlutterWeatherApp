@@ -30,5 +30,12 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+
+
+            <!-- Gives Permission to access the web-->
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
     </application>
 </manifest>

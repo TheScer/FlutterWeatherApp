@@ -16,7 +16,7 @@ class WeatherApp extends StatelessWidget {
             child: Icon(
               Icons.sunny_snowing,
               //padding: const EdgeInsets.all(10.0),
-              color: Colors.pink,
+              color: Colors.red,
               size: 95.0,
               semanticLabel: 'Text to announce in accessibility modes',
             ),
